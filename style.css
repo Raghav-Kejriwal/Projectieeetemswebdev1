@@ -1,0 +1,133 @@
+html,body{
+    height : 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "lato",sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666
+ }
+    nav {
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex; /* Use flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav li {
+    display: inline-block; /* Use inline-block instead of float */
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  h1{
+    background: linear-gradient(to right , skyblue,white);
+    font-family: "helvetica" ;
+  }
+
+  .pimg1{
+    background-image: url(./Boeings-CST-100-Starliner-Crew-Ship-Docking-2048x1365-1-1536x1024.webp);
+    min-height: 100%;
+  }
+  .pimg2{
+    background-image: url(./FAVICON.jpg);
+    min-height: 400px;
+
+  }
+  .pimg3{
+    background-image: url(./bg.jpg);
+    min-height: 400px;
+  }
+.pimg1 , .pimg2 ,.pimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.ptext{
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        /* Existing styles */
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+}
+.textbg{
+    background:black;
+    color: azure;
+    padding: 20px;
+    line-height: 2.5;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+}
+.section-dark{
+    background-color:black ;
+    color: azure;
+}
+.section-light{
+    background-color: azure;
+    color: black;
+}
+button{
+  height: 60px;
+  width:200px;
+  margin: 0 35px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2pszx;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn1:hover{
+  background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size: 400%;
+}
+.btn1{
+  background:black
+
+}
+button:hover{
+  z-index:1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
